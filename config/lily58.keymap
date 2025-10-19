@@ -16,6 +16,11 @@
             bindings = <&kp LC(A)>;
             key-positions = <28 27>;
         };
+
+        RightSelectAll {
+            bindings = <&kp RC(A)>;
+            key-positions = <31 32>;
+        };
     };
 
     keymap {
