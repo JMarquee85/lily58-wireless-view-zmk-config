@@ -21,6 +21,36 @@
             bindings = <&kp RC(A)>;
             key-positions = <31 32>;
         };
+
+        LeftCopy {
+            bindings = <&kp LC(C)>;
+            key-positions = <28 26>;
+        };
+
+        RightCopy {
+            bindings = <&kp RC(C)>;
+            key-positions = <31 33>;
+        };
+
+        LeftPaste {
+            bindings = <&kp LC(V)>;
+            key-positions = <28 25>;
+        };
+
+        RightPaste {
+            bindings = <&kp RC(V)>;
+            key-positions = <31 34>;
+        };
+
+        LeftCut {
+            bindings = <&kp LC(X)>;
+            key-positions = <28 37>;
+        };
+
+        RightCut {
+            bindings = <&kp RC(X)>;
+            key-positions = <31 48>;
+        };
     };
 
     keymap {
