@@ -17,19 +17,9 @@
             key-positions = <28 27>;
         };
 
-        RightSelectAll {
-            bindings = <&kp RC(A)>;
-            key-positions = <31 32>;
-        };
-
         LeftCopy {
             bindings = <&kp LC(C)>;
             key-positions = <28 26>;
-        };
-
-        RightCopy {
-            bindings = <&kp RC(C)>;
-            key-positions = <31 33>;
         };
 
         LeftPaste {
@@ -37,19 +27,44 @@
             key-positions = <28 25>;
         };
 
-        RightPaste {
-            bindings = <&kp RC(V)>;
-            key-positions = <31 34>;
-        };
-
         LeftCut {
             bindings = <&kp LC(X)>;
             key-positions = <28 37>;
         };
 
-        RightCut {
-            bindings = <&kp RC(X)>;
-            key-positions = <31 48>;
+        Esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <19 20>;
+        };
+
+        Find {
+            bindings = <&kp LC(F)>;
+            key-positions = <27 28>;
+        };
+
+        colon {
+            bindings = <&kp COLON>;
+            key-positions = <32 33>;
+        };
+
+        underscore {
+            bindings = <&kp UNDER>;
+            key-positions = <31 32>;
+        };
+
+        MakeLineAComment {
+            bindings = <&kp LC(SLASH)>;
+            key-positions = <45 39>;
+        };
+
+        BackspaceAlt {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <10 11>;
+        };
+
+        equals {
+            bindings = <&kp EQUAL>;
+            key-positions = <44 45>;
         };
     };
 
