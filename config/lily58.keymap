@@ -107,8 +107,8 @@
             key-positions = <16 17>;
         };
 
-        enteralternative {
-            bindings = <&enter>;
+        alternateenter {
+            bindings = <&kp ENTER>;
             key-positions = <25 26 27 28>;
         };
     };
