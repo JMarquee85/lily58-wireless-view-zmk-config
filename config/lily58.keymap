@@ -66,6 +66,99 @@
             bindings = <&kp EQUAL>;
             key-positions = <44 45>;
         };
+
+        noteequals {
+            bindings = <&notEquals>;
+            key-positions = <45 46>;
+        };
+
+        comparison {
+            bindings = <&comparison>;
+            key-positions = <46 47>;
+        };
+
+        brackets {
+            bindings = <&brackets>;
+            key-positions = <45 46>;
+        };
+
+        curlybrackets {
+            bindings = <&curlybrackets>;
+            key-positions = <46 47>;
+        };
+
+        doublequotes {
+            bindings = <&quotationmarks>;
+            key-positions = <35 34>;
+        };
+
+        singlequotes {
+            bindings = <&singlequotes>;
+            key-positions = <23 22>;
+        };
+
+        quickopenfilevscode {
+            bindings = <&kp LC(P)>;
+            key-positions = <13 14>;
+        };
+    };
+
+    macros {
+        notEquals: notEquals {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp EXCLAMATION &kp EQUAL>;
+            label = "NOTEQUALS";
+        };
+
+        comparison: comparison {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp EQUAL &kp EQUAL>;
+            label = "COMPARISON";
+        };
+
+        kwargs: kwargs {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp ASTRK &kp ASTRK>;
+            label = "KWARGS";
+        };
+
+        parentheses: parentheses {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS>;
+            label = "PARENTHESES";
+        };
+
+        brackets: brackets {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACKET &kp RIGHT_BRACKET>;
+            label = "BRACKETS";
+        };
+
+        curlybrackets: curlybrackets {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACE &kp RIGHT_BRACE>;
+            label = "CURLYBRACKETS";
+        };
+
+        quotationmarks: quotationmarks {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DOUBLE_QUOTES &kp DOUBLE_QUOTES>;
+            label = "QUOTATIONMARKS";
+        };
+
+        singlequotes: singlequotes {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SQT &kp SQT>;
+            label = "SINGLEQUOTES";
+        };
     };
 
     keymap {
