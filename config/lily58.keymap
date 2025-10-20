@@ -101,6 +101,11 @@
             bindings = <&kp LC(P)>;
             key-positions = <13 14>;
         };
+
+        vscodetoggleterminal {
+            bindings = <&kp LC(J)>;
+            key-positions = <16 17>;
+        };
     };
 
     macros {
