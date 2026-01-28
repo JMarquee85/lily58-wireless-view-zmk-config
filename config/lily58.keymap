@@ -42,16 +42,6 @@
             key-positions = <28 25>;
         };
 
-        colon {
-            bindings = <&kp COLON>;
-            key-positions = <32 33>;
-        };
-
-        underscore {
-            bindings = <&kp UNDER>;
-            key-positions = <31 32>;
-        };
-
         MakeLineAComment {
             bindings = <&kp LC(SLASH)>;
             key-positions = <45 39>;
@@ -65,26 +55,6 @@
         comparison {
             bindings = <&comparison>;
             key-positions = <46 47>;
-        };
-
-        brackets {
-            bindings = <&brackets>;
-            key-positions = <19 20>;
-        };
-
-        curlybrackets {
-            bindings = <&curlybrackets>;
-            key-positions = <20 21>;
-        };
-
-        doublequotes {
-            bindings = <&quotationmarks>;
-            key-positions = <35 34>;
-        };
-
-        singlequotes {
-            bindings = <&singlequotes>;
-            key-positions = <23 22>;
         };
 
         quickopenfilevscode {
