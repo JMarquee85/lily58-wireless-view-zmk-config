@@ -47,16 +47,6 @@
             key-positions = <45 39>;
         };
 
-        noteequals {
-            bindings = <&notEquals>;
-            key-positions = <45 46>;
-        };
-
-        comparison {
-            bindings = <&comparison>;
-            key-positions = <46 47>;
-        };
-
         quickopenfilevscode {
             bindings = <&kp LC(P)>;
             key-positions = <13 14>;
@@ -66,49 +56,9 @@
             bindings = <&kp LC(J)>;
             key-positions = <16 17>;
         };
-
-        alternateenter {
-            bindings = <&kp ENTER>;
-            key-positions = <25 26 27 28>;
-        };
     };
 
     macros {
-        notEquals: notEquals {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp EXCLAMATION &kp EQUAL>;
-            label = "NOTEQUALS";
-        };
-
-        comparison: comparison {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp EQUAL &kp EQUAL>;
-            label = "COMPARISON";
-        };
-
-        kwargs: kwargs {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp ASTRK &kp ASTRK>;
-            label = "KWARGS";
-        };
-
-        parentheses: parentheses {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS>;
-            label = "PARENTHESES";
-        };
-
-        brackets: brackets {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_BRACKET &kp RIGHT_BRACKET>;
-            label = "BRACKETS";
-        };
-
         curlybrackets: curlybrackets {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -128,13 +78,6 @@
             #binding-cells = <0>;
             bindings = <&kp SQT &kp SQT>;
             label = "SINGLEQUOTES";
-        };
-
-        enter: enter {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp A &kp S &kp D &kp F>;
-            label = "ENTER";
         };
     };
 
@@ -171,11 +114,11 @@
 
             display-name = "Lower";
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3   &bt BT_SEL 4                    &trans     &trans      &trans           &trans     &kp PRINTSCREEN  &kp BACKSPACE
-&kp F1      &kp F2        &kp F3        &kp F4        &kp F5         &kp F6                          &kp F7     &kp F8      &kp F9           &kp F10    &kp F11          &kp F12
-&kp GRAVE   &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR     &kp PRCNT                       &kp CARET  &kp AMPS    &kp KP_MULTIPLY  &kp LPAR   &kp RPAR         &kp TILDE
-&trans      &trans        &trans        &trans        &trans         &trans        &trans    &trans  &trans     &kp MINUS   &kp KP_PLUS      &kp EQUAL  &kp BACKSLASH    &kp PIPE
-                                        &kp LEFT_ALT  &kp LEFT_META  &trans        &trans    &trans  &trans     &kp DELETE  &trans
+&bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3   &bt BT_SEL 4                    &trans     &trans      &trans           &trans     &kp PRINTSCREEN  &kp BACKSPACE
+&kp F1        &kp F2        &kp F3        &kp F4        &kp F5         &kp F6                          &kp F7     &kp F8      &kp F9           &kp F10    &kp F11          &kp F12
+&kp CAPSLOCK  &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR     &kp PRCNT                       &kp CARET  &kp AMPS    &kp KP_MULTIPLY  &kp LPAR   &kp RPAR         &kp TILDE
+&trans        &trans        &trans        &trans        &trans         &trans        &trans    &trans  &trans     &kp MINUS   &kp KP_PLUS      &kp EQUAL  &kp BACKSLASH    &kp PIPE
+                                          &kp LEFT_ALT  &kp LEFT_META  &trans        &trans    &trans  &trans     &kp DELETE  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
